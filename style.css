@@ -28,10 +28,10 @@ body {
 }
 
 .inputContainer > input {
-    margin-block: 0 4rem;
+    margin-block: 1rem 4rem;
     padding : 1rem;
     font-size: 1.6rem;
-    width : 30rem;
+    /* width : 30rem; */
     border : none;
     border-radius: 0.5rem;
     background-color : hsl(189, 41%, 97%);
@@ -91,7 +91,7 @@ input[type=number] {
     margin-block: 1rem 4rem;
     padding: 1rem;
     font-size:1.6rem;
-    width: 30rem;
+    /* width: 30rem; */
     border: none;
     border-radius: 0.5rem;
     background-color: hsl(189, 41%, 97%);
@@ -116,10 +116,11 @@ input[type=number] {
 /* this controls the freturned result block */
 .rightSide{
     background-color: hsl(183, 100%, 15%);
-    border: none;
+    border-left: 2rem;
     border-radius: 2rem;
-    /* padding-block: 5rem 2rem; */
+    padding-block: 2rem 2rem;
     padding-inline: 2rem;
+    padding: 3rem;
 }
 
 .separator {
@@ -147,4 +148,6 @@ input[type=number] {
     font-weight: 700;
     width : 280px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
