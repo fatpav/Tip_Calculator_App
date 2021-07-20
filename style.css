@@ -13,6 +13,11 @@ body {
     background-color: hsl(172, 67%, 45%);
 }
 
+.leftSide {
+    padding: 3rem;
+    width: 50%;
+}
+
 .mainContainer {
     border-radius: 2rem;
     background-color: #fff;
@@ -35,7 +40,7 @@ body {
     font-family: 'Space Mono',sans-serif;
     font-weight: 700;
     color: hsl(183, 100%, 15%);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 input[type=number] {
@@ -62,6 +67,7 @@ input[type=number] {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    margin-bottom: 5rem;
 }
 
 .tipBox > button {
@@ -74,5 +80,71 @@ input[type=number] {
     font-size: 2rem;
     font-family: 'Space Mono',sans-serif;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.peopleInput {
+    position: relative;
+}
+
+.peopleInput > input {
+    margin-block: 1rem 4rem;
+    padding: 1rem;
+    font-size:1.6rem;
+    width: 30rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    cursor: pointer;
+    font-family: 'Space Mono',sans-serif;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    font-size: 18px;
+}
+
+.peopleInput > img {
+    position: absolute;
+    top : 2.3rem;
+    left : 1.5rem;  
+}
+
+.peopleInput > input:focus{
+    outline: none;
+ }
+ 
+/* this controls the freturned result block */
+.rightSide{
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 2rem;
+    /* padding-block: 5rem 2rem; */
+    padding-inline: 2rem;
+}
+
+.separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.5rem;
+
+}
+
+.separator > p {
+    font-size: 2rem;
+    font-family: 'Space Mono', sans-serif;
+    color:#fff;
+    font-weight: 700;
+}
+
+.reset {
+    padding : 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(184, 14%, 56%);
+    font-size: 16px;
+    color : hsl(183, 100%, 15%);
+    font-weight: 700;
+    width : 280px;
     cursor: pointer;
 }

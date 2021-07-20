@@ -22,35 +22,50 @@
     </div>
 
   <div class="mainContainer">
-    <div class="label">
-      <label for="input">Bill</label>
+    <div class="leftSide">
+      <div class="label">
+        <label for="input">Bill</label>
+      </div>
+    
+      <div class="inputContainer">
+        <input type="number" placeholder="0.0" min="0" id="input">
+        <img src="./images/icon-dollar.svg">
+      </div>
+
+      <div class="label">Select Tip %</div>
+        <div class="tipBox">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>5%</button>
+          <button>50%</button>
+          <button>Custom</button>
+        </div>
+
+        <div class="label">
+          <label for="input">Number of People</label>
+        </div>
+          <div class="peopleInput">
+            <input type="number" placeholder="1" min="0" id="input">
+            <img src="./images/icon-person.svg">
+          </div>
+      </div>
+
+
+    <div class="rightSide">
+      <div class="separator">
+        <p>Tip Amount <br/> <span>/ person</span></p>
+      </div>
+      
+      <div class="separator">
+        <p>Total <br/> <span>/ person</span></p> 
+      </div>
     </div>
-  
-  <div class="inputContainer">
-    <input type="number" placeholder="0.0" min="0" id="input">
-    <img src="./images/icon-dollar.svg">
+    
+    <div class="reset">
+      Reset
+    </div>  
   </div>
-
-  <div class="label">Select Tip %</div>
-    <div class="tipBox">
-      <button>5%</button>
-      <button>10%</button>
-      <button>15%</button>
-      <button>5%</button>
-      <button>50%</button>
-      <button>Custom</button>
-    </div>
-
-  <div>Number of People</div>
-
-  <div>Tip Amount</div>
-  <div>/ person</div>
-
-  <div>Total</div>
-  <div>/ person</div>
-
-  <div>Reset</div>
-</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
