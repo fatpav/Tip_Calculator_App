@@ -1,0 +1,78 @@
+* {
+    border: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-block: 5rem;
+}
+
+body {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.mainContainer {
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.inputContainer > input {
+    margin-block: 0 4rem;
+    padding : 1rem;
+    font-size: 1.6rem;
+    width : 30rem;
+    border : none;
+    border-radius: 0.5rem;
+    background-color : hsl(189, 41%, 97%);
+    text-align: right;
+    cursor: pointer;
+    font-family: 'Space Mono',sans-serif;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    font-size: 1.8rem;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.inputContainer > img {
+    position: absolute;
+    top : 1.5rem;
+    left : 1.5rem;
+}
+
+.label {
+    font-family: 'Space Mono',sans-serif;
+    font-size: 1.4rem;
+    color : hsl(186, 14%, 43%);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.tipBox {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.tipBox > button {
+    font-family: 'Space Mono', sans-serif;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color : hsl(183, 100%, 15%);
+    color : #fff;
+    font-size: 2rem;
+    font-family: 'Space Mono',sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}

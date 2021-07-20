@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./style.css" class="rel">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+ 
   <title>Paul D | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,26 +17,40 @@
 </head>
 <body>
 
-  Bill
-  <input type="text" placeholder="Type Bill Amount Here!"></input>
+    <div class="header">
+      <img src="./images/logo.svg" alt="logo" />
+    </div>
 
-  <h2>Select Tip %</h2>
-  <button>5%</button>
-  <button>10%</button>
-  <button>15%</button>
-  <button>5%</button>
-  <button>50%</button>
-  <button>Custom</button>
+  <div class="mainContainer">
+    <div class="label">
+      <label for="input">Bill</label>
+    </div>
+  
+  <div class="inputContainer">
+    <input type="number" placeholder="0.0" min="0" id="input">
+    <img src="./images/icon-dollar.svg">
+  </div>
 
-  Number of People
+  <div class="label">Select Tip %</div>
+    <div class="tipBox">
+      <button>5%</button>
+      <button>10%</button>
+      <button>15%</button>
+      <button>5%</button>
+      <button>50%</button>
+      <button>Custom</button>
+    </div>
 
-  Tip Amount
-  / person
+  <div>Number of People</div>
 
-  Total
-  / person
+  <div>Tip Amount</div>
+  <div>/ person</div>
 
-  Reset
+  <div>Total</div>
+  <div>/ person</div>
+
+  <div>Reset</div>
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
