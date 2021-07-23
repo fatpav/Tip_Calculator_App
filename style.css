@@ -3,19 +3,18 @@
     padding: 0;
 }
 
+body {
+    background-color: hsl(172, 67%, 45%);
+}
+
 .header {
     display: flex;
     justify-content: center;
     margin-block: 5rem;
 }
 
-body {
-    background-color: hsl(172, 67%, 45%);
-}
-
 .leftSide {
     padding: 3rem;
-    width: 50%;
 }
 
 .mainContainer {
@@ -28,10 +27,10 @@ body {
 }
 
 .inputContainer > input {
-    margin-block: 1rem 4rem;
+    margin-block: 0 4rem;
     padding : 1rem;
-    font-size: 1.6rem;
-    width : 30rem;
+    font-size: 1.4rem;
+    width : 100%;
     border : none;
     border-radius: 0.5rem;
     background-color : hsl(189, 41%, 97%);
@@ -43,14 +42,14 @@ body {
     font-size: 1.6rem;
 }
 
-input[type=number] {
-    -moz-appearance: textfield;
-}
-
 .inputContainer > img {
     position: absolute;
     top : 2.7rem;
     left : 1.5rem;
+}
+
+.inputContainer > input:focus {
+    outline: none;
 }
 
 .label {
@@ -83,7 +82,7 @@ input[type=number] {
     cursor: pointer;
 }
 
-.tipBox >button.active {
+.tipBox > button.active {
     background-color: hsl(185, 41%, 84%);
     color : hsl(183, 100%, 15%);
 }
@@ -97,7 +96,7 @@ input[type=number] {
     margin-block: 1rem 4rem;
     padding: 1rem;
     font-size:1.6rem;
-    /* width: 30rem; */
+    width: 100%;
     border: none;
     border-radius: 0.5rem;
     background-color: hsl(189, 41%, 97%);
@@ -115,20 +114,17 @@ input[type=number] {
     left : 1.5rem;  
 }
 
-.peopleInput > input:focus{
-    outline: none;
+.peopleInput > input:focus {
+    outline: none; 
  }
  
-/* this controls the freturned result block */
+/* this controls the returned result block */
 .rightSide{
     background-color: hsl(183, 100%, 15%);
     border-left: 2rem;
     border-radius: 2rem;
-    padding-block: 2rem 2rem;
+    padding-block: 5rem 2rem;
     padding-inline: 2rem;
-    padding: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
 }
 
 .separator {
@@ -168,7 +164,64 @@ input[type=number] {
     justify-content: center;
     font-family: 'Space Mono', sans-serif;
     position: relative;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 10rem;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width : 1200) {
+    .mainContainer {
+        display: flex;
+        width: 9.2rem;
+        height: 4.9rem;
+        margin: 0 auto;
+    }
+
+    .leftSide {
+        width: 50%;
+    }
+
+    .rightSide {
+        width: 50%;
+        margin-block: 3.5rem;
+        margin-right: 3.5rem;
+        padding-block: 5rem 2rem;
+        padding-inline: 2rem;
+        position: relative;
+    }
+
+    .separator {
+        padding-inline: 4rem;
+    }
+
+    .reset {
+        position: absolute;
+        bottom: 4rem;
+        left: 4rem;
+        width: 3.55rem;
+        margin: 0 auto;
+    }
+
+    .inputContainer > input {
+        width: 3rem;
+    }
+
+    .peopleInput {
+        position: relative;
+        width: 3.7rem;
+        bottom: 2rem;
+    }
+
+    .peopleInput > img {
+        position: absolute;
+        top: 0.7rem;
+    }
+
+    .tipBox {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 0;
+    }
+
+    .tipBox > input {
+        width: 9.5rem;
+    }
 }
