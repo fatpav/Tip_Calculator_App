@@ -168,7 +168,7 @@ body {
 }
 
 
-@media screen and (min-width : 1200) {
+/* @media screen and (min-width : 1200) {
     .mainContainer {
         display: flex;
         width: 9.2rem;
@@ -224,4 +224,4 @@ body {
     .tipBox > input {
         width: 9.5rem;
     }
-}
+} */
