@@ -1,7 +1,6 @@
-function calculateTip(billTotal, percentage) {
-    const result = (billTotal * percentage)
-    console.log(result)
-}
+const input = document.getElementById('input')
+const button = document.querySelectorAll('.btn')
+const customTip = document.getElementById('customTip')
 
 
 // CAalculator has to take BILL TOTAL BEFORE TIP and ADD the given percentage of the initial bill 
